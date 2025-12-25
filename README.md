@@ -29,7 +29,6 @@ The pipeline performs three sequential steps:
 
 3.  **Volume Configuration:**
     * Ensure all scripts reference the same volume name: `llama31-mlp-only`.
-    * *Note: If you copied scripts from earlier versions, ensure `vol = modal.Volume.from_name("llama31-mlp-only")` is set in the quantization files.*
 
 ## Usage Guide
 
