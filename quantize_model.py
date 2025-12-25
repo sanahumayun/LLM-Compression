@@ -8,7 +8,7 @@ image = (
     .apt_install("git", "build-essential", "cmake", "pkg-config")
 )
 
-vol = modal.Volume.from_name("llama-pruned-storage")
+vol = modal.Volume.from_name("llama31-mlp-only")
 app = modal.App("llama-quantizer")
 
 @app.function(
@@ -82,4 +82,5 @@ def run_quantization():
 
 @app.local_entrypoint()
 def main():
+
     run_quantization.remote()
