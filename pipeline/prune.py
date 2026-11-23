@@ -1,4 +1,7 @@
-# prune_llama31_mlp_only.py - MLP-only pruning with all fixes
+"""Step 1: structured pruning of Llama 3.1 8B Instruct (MLP blocks only).
+
+Run: modal run pipeline/prune.py
+"""
 import modal
 
 app = modal.App("llm-pruner-mlp-only")

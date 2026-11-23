@@ -1,4 +1,7 @@
-# eval_perplexity.py - Simple perplexity evaluation
+"""Optional: perplexity of the LoRA-recovered model on WikiText-2.
+
+Run: modal run recovery/evaluate_perplexity.py --checkpoint checkpoint-1556
+"""
 import modal
 
 app = modal.App("llama31-perplexity")

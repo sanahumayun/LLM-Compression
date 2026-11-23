@@ -1,4 +1,7 @@
-# post_train_llama31_mlp.py - Post-training for MLP-only pruned model
+"""Optional: LoRA post-training to recover quality lost during pruning.
+
+Run: modal run recovery/post_train_lora.py
+"""
 import modal
 
 app = modal.App("llm-post-training-mlp")
